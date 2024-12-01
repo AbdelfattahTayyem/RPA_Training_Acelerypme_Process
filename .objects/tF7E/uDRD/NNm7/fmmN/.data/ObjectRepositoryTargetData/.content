@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QgwNhkeDKkKZhDHJDvBt3A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acelerapyme.gob.es/user/reset/1119280/1731092261/8oJllvdFO_TQY03K2uf-6wF3tlsUB7-XMAyIavRss3k" CVScreenId="4c11d59e-ddf9-4074-8fe4-3a23fa95a467" DesignTimeRectangle="300, 87, 1783, 37" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Choose a new password | Acelera pyme - Google Chrome' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzyAccuracy="0.91" FuzzySelectorArgument="&lt;ctrl name='Choose a new password | Acelera pyme - Google Chrome' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="35e869ce-82f8-4515-9da1-f30e725db689" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Choose a new password | Acelera pyme - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8537e670fd8e96d1c9d5b882b6d380d4.png" xmlns="">0wI2WThUeDEyY_Hw9sgm5GQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

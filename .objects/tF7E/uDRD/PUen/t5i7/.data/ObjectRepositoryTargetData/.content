@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Yt3LITzH-UidUV8eNF_Q_Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acelerapyme.gob.es/registro-pyme" CVScreenId="cf900df4-d385-4f21-af14-1db0d7b732c1" DesignTimeRectangle="865, 892, 834, 64" DesignTimeScaleFactor="1.5" ElementType="DropDown" FullSelectorArgument="&lt;webctrl aria-labelledby='i4t-id-19' tag='SELECT' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl aria-labelledby='i4t-id-19' tag='SELECT' type='' class='form-select form-control' aaname='¿Cómo nos has conocido?' /&gt;" Guid="87eba7e8-bc27-49dc-a965-8cc6d6c8f900" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Registro pyme | Acelera pyme' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="cf900df4-d385-4f21-af14-1db0d7b732c1" CvTextArea="863, 846, 327, 25" CvTextArgument="¿Cómo nos has conocido?" CvType="Text" DesignTimeRectangle="865, 841, 325, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-label='  ¿Cómo nos has conocido?&amp;#xA;' tag='LABEL' type='' class='' aaname='¿Cómo nos has conocido?' check:innerText='¿Cómo nos has conocido?' /&gt;" Guid="6477bf18-1f53-4885-b90d-09ce494e8d97" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7cbac6cf18493654e568884b7bd937e6.png" xmlns="">0nc17ZHX0dkyaJ7vG4ODlOA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

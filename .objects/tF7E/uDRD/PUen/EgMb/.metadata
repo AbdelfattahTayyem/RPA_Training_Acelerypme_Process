@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Menos de 3 trabajadores",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "EgMbI9tN8k2xk-4RVn1aTg",
+  "Reference": "0eNy8hhjmECicTedOMKrJw/EgMbI9tN8k2xk-4RVn1aTg",
+  "ParentRef": "0eNy8hhjmECicTedOMKrJw/PUen4cWAx02xgV-SSokPXw",
+  "Created": "2024-11-08T16:59:30.3584798Z",
+  "Updated": "2024-11-08T16:59:30.3584798Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

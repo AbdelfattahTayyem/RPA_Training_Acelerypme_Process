@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NAA5bB7Oh0afWoUTDZRspg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acelerapyme.gob.es/user/reset/1119280/1731092261/8oJllvdFO_TQY03K2uf-6wF3tlsUB7-XMAyIavRss3k" CVScreenId="4c11d59e-ddf9-4074-8fe4-3a23fa95a467" DesignTimeRectangle="427, 810, 675, 60" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl id='edit-submit' tag='INPUT' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl id='edit-submit' tag='INPUT' type='submit' class='button button--primary js-form-submit form-submit btn btn-primary' aaname='Guarda y accede como noname133@yopmail.com' check:text='Guarda y accede como noname133@yopmail.com' /&gt;" Guid="0ddd0a3e-e0f7-4a9d-a45a-7a21ddbfa4d1" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Choose a new password | Acelera pyme' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4c11d59e-ddf9-4074-8fe4-3a23fa95a467" DesignTimeRectangle="427, 726, 379, 36" FullSelectorArgument="&lt;webctrl aaname='Las contraseñas coinciden: ' parentid='edit-pass' tag='DIV' /&gt;" FuzzyAccuracy="0.93" FuzzySelectorArgument="&lt;webctrl aaname='Las contraseñas coinciden: ' parentid='edit-pass' tag='DIV' type='' class='password-confirm js-password-confirm js-password-confirm-message' check:innerText='Las contraseñas coinciden:' /&gt;" Guid="ccfc1de5-d0d8-4344-9897-3ca9dd3be3a9" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3f888184e76ccc8a950401f2f53583e5.png" xmlns="">0TF7t_cOcpky2AYvV5WFaJA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

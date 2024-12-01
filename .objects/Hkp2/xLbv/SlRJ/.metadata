@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Task Switching",
+  "Type": "Screen",
+  "Id": "SlRJ0ZPkPE23EPIfiN0jbw",
+  "Reference": "0eNy8hhjmECicTedOMKrJw/SlRJ0ZPkPE23EPIfiN0jbw",
+  "ParentRef": "0eNy8hhjmECicTedOMKrJw/xLbvcF0MvE-EzAxSmzkDRw",
+  "Created": "2024-11-08T19:30:35.1444555Z",
+  "Updated": "2024-11-08T19:30:35.1444555Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

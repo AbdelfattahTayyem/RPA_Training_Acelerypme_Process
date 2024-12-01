@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1Gan5oavYEaMrHOSkfn6Kg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acelerapyme.gob.es/registro-pyme" DesignTimeRectangle="873, 914, 460, 42" DesignTimeScaleFactor="1.5" ElementType="InputBox" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl parentid='edit_cnae_code__nKmeCOFTKIw_chosen' tag='INPUT' type='text' class='chosen-search-input' aaname='' /&gt;" Guid="45385625-35e6-4900-a610-2a1944608a04" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Registro pyme | Acelera pyme' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e47fc32f-7b9c-4b87-bc78-bedab149682b" DesignTimeRectangle="865, 789, 191, 36" ElementType="Text" FuzzyAccuracy="0.91" FuzzySelectorArgument="&lt;webctrl aria-label='  Código CNAE&amp;#xA;' tag='LABEL' type='' class='js-form-required form-required' aaname='Código CNAE' check:innerText='Código CNAE' /&gt;" Guid="aedd4059-433f-4c82-b4f8-770621236c3e" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fc8a7c1c8054907a40f92b631db23388.png" xmlns="">0Eg90GJigKkaGTXcxr3bxhA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

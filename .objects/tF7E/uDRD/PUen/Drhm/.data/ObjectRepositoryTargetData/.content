@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7hWPyAwl3kCip6Ey3Z0vFQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acelerapyme.gob.es/registro-pyme" CVScreenId="a9b8ae35-7ef9-4531-a2d3-014549d1b526" DesignTimeRectangle="865, 662, 556, 64" DesignTimeScaleFactor="1.5" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='DIV' visibleinnertext='Localidad*' /&gt;&lt;webctrl aria-labelledby='edit-commmunity-province-location--kci8byAsQEg-shs-0-2-label' tag='SELECT' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl tag='DIV' visibleinnertext='Localidad*' /&gt;&lt;webctrl aria-labelledby='edit-commmunity-province-location--kci8byAsQEg-shs-0-2-label' tag='SELECT' type='' class='shs-select form-select form-element form-element--type-select required' aaname='' /&gt;" Guid="c934cdb9-a2e6-4cd5-af99-69c718cdd361" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Registro pyme | Acelera pyme' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8abe38ae1df205e880c4dba1d87a96a2.png" xmlns="">0Facz5vb0tkqAUoZ3V5Sk7g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

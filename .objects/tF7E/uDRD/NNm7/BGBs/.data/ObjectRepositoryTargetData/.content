@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="O-ucWCIxQUarpYUrKqm9DQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acelerapyme.gob.es/user/reset/1119280/1731092261/8oJllvdFO_TQY03K2uf-6wF3tlsUB7-XMAyIavRss3k" CVScreenId="4c11d59e-ddf9-4074-8fe4-3a23fa95a467" DesignTimeRectangle="427, 443, 689, 63" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='edit-pass-pass1' tag='INPUT' /&gt;" FuzzyAccuracy="0.92" FuzzySelectorArgument="&lt;webctrl id='edit-pass-pass1' tag='INPUT' type='password' class='password-field js-password-field form-text required form-control' aaname='Contraseña' /&gt;" Guid="7e372aa9-510b-4b99-9e18-6ef512ce5126" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Choose a new password | Acelera pyme' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4c11d59e-ddf9-4074-8fe4-3a23fa95a467" DesignTimeRectangle="427, 389, 167, 36" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzyAccuracy="0.95" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='js-form-required form-required' aaname='Contraseña' check:innerText='Contraseña' /&gt;" Guid="5f1b055f-07e6-4e1a-8436-43360c2ba2c1" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="25cf856a68956636cb102ad93526a08b.png" xmlns="">0GCxrSc9iqU2zO7pDJIcDxg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

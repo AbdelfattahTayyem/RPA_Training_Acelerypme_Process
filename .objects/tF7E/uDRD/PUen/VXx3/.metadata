@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Código CNAE(1)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "VXx3Y734ZkqtkqsLVaC3ZA",
+  "Reference": "0eNy8hhjmECicTedOMKrJw/VXx3Y734ZkqtkqsLVaC3ZA",
+  "ParentRef": "0eNy8hhjmECicTedOMKrJw/PUen4cWAx02xgV-SSokPXw",
+  "Created": "2024-11-06T06:14:21.2635615Z",
+  "Updated": "2024-11-06T06:14:21.2635615Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

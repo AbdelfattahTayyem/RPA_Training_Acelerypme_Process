@@ -1,0 +1,681 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence2" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_ReadTxt" Type="InArgument(x:String)" />
+    <x:Property Name="Out_Gender" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_Name" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_Email" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_Phone" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_CompanyN" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_Nif" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_Comunidad" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_Provincia" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_Localidad" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_Postal" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_CNAE" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_Employees" Type="OutArgument(x:String)" />
+    <x:Property Name="Out_Year" Type="OutArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Sequence2_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence2" sap:VirtualizedContainerService.HintSize="1054,2480.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText="PDD section: 1.1 Prompt User to input Data Text&#xA;Pre Condition : Option Menu Exist&#xA;Post Condition : Top Box Office Exist&#xA;Arguments:" DisplayName="Prompt User" sap:VirtualizedContainerService.HintSize="684.6666666666666,2458" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="s:DateTime" Name="StartData" />
+        <Variable x:TypeArguments="x:String" Name="XamlFileName" />
+        <Variable x:TypeArguments="x:String" Name="Str_NameLine" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="650.6666666666666,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[XamlFileName+&quot;Is Started&quot;]" />
+      <Assign sap:VirtualizedContainerService.HintSize="650.6666666666666,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:DateTime">[StartData]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:DateTime">[Now]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="650.6666666666666,2002.6666666666667" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+        <ui:RetryScope.ActivityBody>
+          <ActivityAction>
+            <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="608.6666666666666,1801.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="574.6666666666666,1741.3333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                <TryCatch.Try>
+                  <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="536,1456" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="Pre Condition " sap:VirtualizedContainerService.HintSize="502,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Boolean" Name="bool_Preconditionexists" />
+                        <Variable x:TypeArguments="x:Boolean" Name="bool_Postconditionexists" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If Condition="[Not String.IsNullOrEmpty(in_ReadTxt)]" sap:VirtualizedContainerService.HintSize="450,741.3333333333334" sap2010:WorkflowViewState.IdRef="If_2">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:Boolean" Name="var_PostCondition" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Post Condition Exist&quot;]" />
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,351.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Error" Message="[&quot;Post Condition Failed&quot;]" />
+                            <Throw Exception="[New System.Exception(XamlFileName + &quot; Failed &quot;)]" sap:VirtualizedContainerService.HintSize="382,114.66666666666667" sap2010:WorkflowViewState.IdRef="Throw_3" />
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                    <Sequence DisplayName="Action " sap:VirtualizedContainerService.HintSize="502,1290.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="in_FilePath" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence DisplayName="Split First Line" sap:VirtualizedContainerService.HintSize="468,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Str_NameLine]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[in_ReadTxt.Split(Environment.NewLine.ToCharArray)(0)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Out_Gender]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[Str_NameLine.Split(":")(0).Trim]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_4">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Out_Name]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[Str_NameLine.Split(":")(1)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                      <Sequence DisplayName="Split Second Line" sap:VirtualizedContainerService.HintSize="468,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="Str_EmailLine" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Str_EmailLine]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[in_ReadTxt.Split(Environment.NewLine.ToCharArray)(1)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_6">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Out_Email]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[Str_EmailLine.Split(":")(1)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                      <Sequence DisplayName="Split Third Line" sap:VirtualizedContainerService.HintSize="468,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="Str_EmailLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_PhoneLine" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_8">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Str_PhoneLine]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[in_ReadTxt.Split(Environment.NewLine.ToCharArray)(2)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_9">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Out_Phone]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[Str_PhoneLine.Split(":")(1)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                      <Sequence DisplayName="Split Fourth Line" sap:VirtualizedContainerService.HintSize="468,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="Str_EmailLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_PhoneLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_CompanyNLine" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_10">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Str_CompanyNLine]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[in_ReadTxt.Split(Environment.NewLine.ToCharArray)(3)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_11">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Out_CompanyN]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[Str_CompanyNLine.Split(":")(1)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                      <Sequence DisplayName="Split Fith Line" sap:VirtualizedContainerService.HintSize="468,317.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="Str_EmailLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_PhoneLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_CompanyNLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Nif" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_12">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Str_Nif]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[in_ReadTxt.Split(Environment.NewLine.ToCharArray)(4)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_13">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Out_Nif]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[Str_Nif.Split(":")(1).Trim]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                      <Sequence DisplayName="Split Sixth Line" sap:VirtualizedContainerService.HintSize="468,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="Str_EmailLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_PhoneLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_CompanyNLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Nif" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Comunidad" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_14">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Str_Comunidad]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[in_ReadTxt.Split(Environment.NewLine.ToCharArray)(5)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_15">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Out_Comunidad]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[Str_Comunidad.Split(":")(1).Trim]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                      <Sequence DisplayName="Split Siventh Line" sap:VirtualizedContainerService.HintSize="468,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="Str_EmailLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_PhoneLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_CompanyNLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Nif" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Comunidad" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Provincia" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_16">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Str_Provincia]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[in_ReadTxt.Split(Environment.NewLine.ToCharArray)(6)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_17">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Out_Provincia]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[Str_Provincia.Split(":")(1).Trim]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                      <Sequence DisplayName="Split Eighth Line" sap:VirtualizedContainerService.HintSize="468,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="Str_EmailLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_PhoneLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_CompanyNLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Nif" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Comunidad" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Provincia" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Localidad" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_18">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Str_Localidad]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[in_ReadTxt.Split(Environment.NewLine.ToCharArray)(7)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_19">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Out_Localidad]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[Str_Localidad.Split(":")(1).Trim]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                      <Sequence DisplayName="Split Ninth Line" sap:VirtualizedContainerService.HintSize="468,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="Str_EmailLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_PhoneLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_CompanyNLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Nif" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Comunidad" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Provincia" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Localidad" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Postal" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_20">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Str_Postal]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[in_ReadTxt.Split(Environment.NewLine.ToCharArray)(8)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_21">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Out_Postal]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[Str_Postal.Split(":")(1).Trim]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                      <Sequence DisplayName="Split Tenth Line" sap:VirtualizedContainerService.HintSize="468,317.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="Str_EmailLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_PhoneLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_CompanyNLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Nif" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Comunidad" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Provincia" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Localidad" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Postal" />
+                          <Variable x:TypeArguments="x:String" Name="Str_CNAE" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_22">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Str_CNAE]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[in_ReadTxt.Split(Environment.NewLine.ToCharArray)(9)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_23">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Out_CNAE]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[Str_CNAE.Split(":")(1).Trim]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                      <Sequence DisplayName="Split 11th Line" sap:VirtualizedContainerService.HintSize="468,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="Str_EmailLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_PhoneLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_CompanyNLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Nif" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Comunidad" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Provincia" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Localidad" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Postal" />
+                          <Variable x:TypeArguments="x:String" Name="Str_CNAE" />
+                          <Variable x:TypeArguments="x:String" Name="Str_" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Employees" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_24">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Str_Employees]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[in_ReadTxt.Split(Environment.NewLine.ToCharArray)(10)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_25">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Out_Employees]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[Str_Employees.Split(":")(1)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                      <Sequence DisplayName="Split 12th Line" sap:VirtualizedContainerService.HintSize="468,48" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="Str_EmailLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_PhoneLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_CompanyNLine" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Nif" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Comunidad" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Provincia" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Localidad" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Postal" />
+                          <Variable x:TypeArguments="x:String" Name="Str_CNAE" />
+                          <Variable x:TypeArguments="x:String" Name="Str_" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Employees" />
+                          <Variable x:TypeArguments="x:String" Name="Str_Year" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_26">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Str_Year]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[in_ReadTxt.Split(Environment.NewLine.ToCharArray)(11)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_27">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Out_Year]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[Str_Year.Split(":")(1)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </Sequence>
+                    <Sequence DisplayName="Post Condition" sap:VirtualizedContainerService.HintSize="502,48" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Boolean" Name="bool_Postconditionexists" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If Condition="[Not String.IsNullOrEmpty(in_ReadTxt)]" sap:VirtualizedContainerService.HintSize="450,741.3333333333334" sap2010:WorkflowViewState.IdRef="If_1">
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:Boolean" Name="var_PostCondition" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Post Condition Exist&quot;]" />
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,351.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Error" Message="[&quot;Post Condition Failed&quot;]" />
+                            <Throw Exception="[New System.Exception(XamlFileName + &quot; Failed &quot;)]" sap:VirtualizedContainerService.HintSize="382,114.66666666666667" sap2010:WorkflowViewState.IdRef="Throw_4" />
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                  </Sequence>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="540.6666666666666,23.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="s:Exception">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                      </ActivityAction.Argument>
+                      <Sequence sap:VirtualizedContainerService.HintSize="416,351.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Error" Message="[exception.Message]" />
+                        <Throw Exception="[New System.Exception(XamlFileName +&quot;-&quot;+exception.Source+&quot;-&quot;+exception.Message)]" sap:VirtualizedContainerService.HintSize="382,114.66666666666667" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                      </Sequence>
+                    </ActivityAction>
+                  </Catch>
+                  <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="522.6666666666666,23.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="ui:BusinessRuleException">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="BusinessRuleException" />
+                      </ActivityAction.Argument>
+                      <Sequence sap:VirtualizedContainerService.HintSize="416,351.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[BusinessRuleException.Message]" />
+                        <Throw Exception="[New BusinessRuleException(XamlFileName +&quot;-&quot;+BusinessRuleException.Source+&quot;-&quot;+BusinessRuleException.Message)]" sap:VirtualizedContainerService.HintSize="382,114.66666666666667" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                      </Sequence>
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+              </TryCatch>
+            </Sequence>
+          </ActivityAction>
+        </ui:RetryScope.ActivityBody>
+        <ui:RetryScope.Condition>
+          <ActivityFunc x:TypeArguments="x:Boolean" />
+        </ui:RetryScope.Condition>
+      </ui:RetryScope>
+    </Sequence>
+  </Sequence>
+</Activity>

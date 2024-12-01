@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Registro pyme  Acelera pyme",
+  "Type": "App",
+  "Id": "tF7EuzRHeEqz3SeYYzhKNg",
+  "Reference": "0eNy8hhjmECicTedOMKrJw/tF7EuzRHeEqz3SeYYzhKNg",
+  "Created": "2024-11-05T14:39:14.8312526Z",
+  "Updated": "2024-11-05T14:39:14.8312526Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

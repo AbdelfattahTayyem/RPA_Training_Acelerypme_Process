@@ -1,0 +1,14 @@
+﻿{
+  "Name": "acelerapyme.gob.esuser…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "fmmNNkiMRkaJIhpk_KbvJw",
+  "Reference": "0eNy8hhjmECicTedOMKrJw/fmmNNkiMRkaJIhpk_KbvJw",
+  "ParentRef": "0eNy8hhjmECicTedOMKrJw/NNm72XGPuEuKvlqJMPKOkA",
+  "Created": "2024-11-08T20:04:58.8066656Z",
+  "Updated": "2024-11-08T20:04:58.8066656Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

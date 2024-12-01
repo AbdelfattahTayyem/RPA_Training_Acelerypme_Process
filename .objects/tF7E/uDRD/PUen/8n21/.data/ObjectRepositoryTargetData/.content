@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2nqNBsrrSU-LRQbyqShPSw" Reference="0eNy8hhjmECicTedOMKrJw/8n21PPKbYkOAyrceXDoUGg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acelerapyme.gob.es/registro-pyme" CVScreenId="aaa5311a-6f00-49a0-ab44-cfc80a2c84ba" DesignTimeRectangle="1798, 668, 179, 66" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Continuar' tag='INPUT' type='submit' /&gt;" FuzzyAccuracy="0.89" FuzzySelectorArgument="&lt;webctrl aria-label='Continuar' tag='INPUT' type='submit' class='webform-button--preview button js-form-submit form-submit btn btn-primary' aaname='Continuar' check:text='Continuar' /&gt;" Guid="49625446-3252-4f36-8f78-6d563173a222" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Registro pyme | Acelera pyme' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="aaa5311a-6f00-49a0-ab44-cfc80a2c84ba" CvTextArea="1538, 687, 217, 22" CvTextArgument="Volver a contacto" CvType="Text" DesignTimeRectangle="1541, 686, 215, 29" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Volver a contacto' tag='INPUT' type='submit' class='webform-button--previous button js-form-submit form-submit btn btn-primary' aaname='Volver a contacto' check:text='Volver a contacto' /&gt;" Guid="26c3e691-933b-498d-951d-be5c4d5c197c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c42bfddbd3eed5e126073e9b93058fd2.png" xmlns="">0GTwpjmdfQEiFej-MUgInhA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="u8LJuraAwkCiFPHcN2xttA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acelerapyme.gob.es/registro-pyme" CVScreenId="3bc1d531-ca1b-4aa7-a27e-1125c8af5f63" DesignTimeRectangle="865, 541, 359, 36" DesignTimeScaleFactor="1.5" ElementType="Text" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl aria-label='  Entre 10 y 49 trabajadores&amp;#xA;' aria-role='radio' tag='LABEL' type='' class='option' aaname='Entre 10 y 49 trabajadores' check:innerText='Entre 10 y 49 trabajadores' /&gt;" Guid="56a1616f-3a83-40e3-a5a6-37a613b5e536" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Registro pyme | Acelera pyme' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d744ef30f28eea5f287e755e13ead732.png" xmlns="">0DtOIIPKjoEaReUphvBTOQw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

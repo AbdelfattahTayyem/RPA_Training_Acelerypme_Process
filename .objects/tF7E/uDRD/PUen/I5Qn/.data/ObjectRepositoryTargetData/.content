@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NFjus06yPEG7AAu1uueTQg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acelerapyme.gob.es/registro-pyme" CVScreenId="fe975c96-dadf-43bb-9b29-0ef9a3971b85" DesignTimeRectangle="865, 647, 834, 64" DesignTimeScaleFactor="1.5" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='edit-activity-start--YvmmQFdvJZ0' tag='SELECT' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl id='edit-activity-start--YvmmQFdvJZ0' tag='SELECT' type='' class='form-select form-control' aaname='Inicio de la actividad' /&gt;" Guid="e41193bc-5091-4a37-b9ed-bd3b8e0964c2" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Registro pyme | Acelera pyme' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="fe975c96-dadf-43bb-9b29-0ef9a3971b85" CvTextArea="863, 600, 260, 24" CvTextArgument="Inicio de la actividad" CvType="Text" DesignTimeRectangle="865, 595, 260, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-label='  Inicio de la actividad&amp;#xA;' tag='LABEL' type='' class='' aaname='Inicio de la actividad' check:innerText='Inicio de la actividad' /&gt;" Guid="37865fba-8a4f-4d68-a81f-08acbbe7f119" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0bc72b506c43465b20c90e24aed61540.png" xmlns="">0gBoG7fBypUSbQT02af0SGA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

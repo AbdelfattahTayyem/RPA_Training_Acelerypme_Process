@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Finalizar registro(1)",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "OTCcsWQPUkKFDoFpVmuusA",
+  "Reference": "0eNy8hhjmECicTedOMKrJw/OTCcsWQPUkKFDoFpVmuusA",
+  "ParentRef": "0eNy8hhjmECicTedOMKrJw/HBlSs8eL70-XKOtsRM_Y9w",
+  "Created": "2024-11-08T20:18:25.7486245Z",
+  "Updated": "2024-11-08T20:18:25.7486245Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

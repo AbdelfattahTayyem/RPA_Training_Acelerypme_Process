@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uiHFY1oekUKlZWDMdNp-ow" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acelerapyme.gob.es/registro-pyme" CVScreenId="3ac24170-3dfc-4425-a635-725f5285fe66" CvElementArea="1709, 1086, 269, 71" CvTextArea="1736, 1109, 214, 28" CvTextArgument="Finalizar registro" CvType="Button" DesignTimeRectangle="1711, 1089, 266, 66" DesignTimeScaleFactor="1.5" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Finalizar registro' tag='INPUT' type='submit' class='webform-button--submit button button--primary js-form-submit form-submit btn btn-primary' aaname='Finalizar registro' check:text='Finalizar registro' /&gt;" Guid="e45e7440-dbd7-433f-92b7-dc5e62bba5cc" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Registro pyme | Acelera pyme' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3ac24170-3dfc-4425-a635-725f5285fe66" DesignTimeRectangle="1419, 1108, 250, 29" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Volver a datos pyme' tag='INPUT' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl aria-label='Volver a datos pyme' tag='INPUT' type='submit' class='webform-button--previous button js-form-submit form-submit btn btn-primary' aaname='Volver a datos pyme' check:text='Volver a datos pyme' /&gt;" Guid="75a9aab3-d3a3-44d9-8777-c1d4afa6d338" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="57997710551122fda25fe4579120931b.png" xmlns="">06hIKiXanHU6mNeaGZhhoqA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

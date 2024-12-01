@@ -1,0 +1,14 @@
+﻿{
+  "Name": "¿Cómo nos has conocido",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "t5i78VwZK0CmttgwC7wFtw",
+  "Reference": "0eNy8hhjmECicTedOMKrJw/t5i78VwZK0CmttgwC7wFtw",
+  "ParentRef": "0eNy8hhjmECicTedOMKrJw/PUen4cWAx02xgV-SSokPXw",
+  "Created": "2024-11-08T18:34:34.2550508Z",
+  "Updated": "2024-11-08T18:34:34.2550508Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Inbox",
+  "Type": "Screen",
+  "Id": "kME7vhsSAk6UKjgXb2DIdg",
+  "Reference": "0eNy8hhjmECicTedOMKrJw/kME7vhsSAk6UKjgXb2DIdg",
+  "ParentRef": "0eNy8hhjmECicTedOMKrJw/zMyOKziFw02mMnmaK64A1A",
+  "Created": "2024-11-08T19:41:06.1102343Z",
+  "Updated": "2024-11-08T19:41:06.1102343Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Seleccionar",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "z0Jqo0MqpkSFP7lyjz13kw",
+  "Reference": "0eNy8hhjmECicTedOMKrJw/z0Jqo0MqpkSFP7lyjz13kw",
+  "ParentRef": "0eNy8hhjmECicTedOMKrJw/PUen4cWAx02xgV-SSokPXw",
+  "Created": "2024-11-06T06:11:40.9918764Z",
+  "Updated": "2024-11-06T06:11:40.9918764Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

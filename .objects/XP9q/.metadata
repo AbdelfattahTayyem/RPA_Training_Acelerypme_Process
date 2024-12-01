@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome YOPmail - Disposable Email Address - Anonymous and temporary inbox",
+  "Type": "App",
+  "Id": "XP9qI6KnK0-Ju4DrirTNnA",
+  "Reference": "0eNy8hhjmECicTedOMKrJw/XP9qI6KnK0-Ju4DrirTNnA",
+  "Created": "2024-11-08T19:32:54.2066351Z",
+  "Updated": "2024-11-08T19:32:54.2066351Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

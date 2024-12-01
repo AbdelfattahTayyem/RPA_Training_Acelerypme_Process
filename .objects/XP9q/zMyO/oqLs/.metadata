@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome YOPmail - Disposable Email Address - A",
+  "Type": "Screen",
+  "Id": "oqLse6my6kiOINYmxSLrMw",
+  "Reference": "0eNy8hhjmECicTedOMKrJw/oqLse6my6kiOINYmxSLrMw",
+  "ParentRef": "0eNy8hhjmECicTedOMKrJw/zMyOKziFw02mMnmaK64A1A",
+  "Created": "2024-11-08T19:32:54.2346837Z",
+  "Updated": "2024-11-08T19:32:54.2346837Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

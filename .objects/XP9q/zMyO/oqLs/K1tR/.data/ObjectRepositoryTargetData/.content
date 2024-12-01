@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="3XvXswV0KEyURI79UbiN5w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="yopmail.com" CVScreenId="d205ad93-d9f7-4d3e-8ec0-cbf90f1fa7b1" DesignTimeRectangle="344, 723, 515, 34" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='login' tag='INPUT' /&gt;" FuzzyAccuracy="0.91" FuzzySelectorArgument="&lt;webctrl id='login' tag='INPUT' type='text' class='ycptinput' placeholder='Enter your inbox here' aaname='Login' /&gt;" Guid="0117c3df-6686-472a-bb5e-a59a345723e6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='YOPmail - Disposable Email Address - Anonymous and temporary inbox' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="83aad93383272b62bb61d7690004dacf.png" xmlns="">0uJLlkalQCUa4hOBnTOLDJw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

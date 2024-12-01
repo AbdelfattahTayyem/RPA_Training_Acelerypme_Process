@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Choose a new password  Acelera pyme",
+  "Type": "Screen",
+  "Id": "NNm72XGPuEuKvlqJMPKOkA",
+  "Reference": "0eNy8hhjmECicTedOMKrJw/NNm72XGPuEuKvlqJMPKOkA",
+  "ParentRef": "0eNy8hhjmECicTedOMKrJw/uDRDTYChn02qWfg5cSxZAw",
+  "Created": "2024-11-08T19:57:33.2252082Z",
+  "Updated": "2024-11-08T19:57:33.2252082Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

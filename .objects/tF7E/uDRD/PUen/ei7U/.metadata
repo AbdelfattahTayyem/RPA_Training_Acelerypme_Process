@@ -1,0 +1,14 @@
+﻿{
+  "Name": "250 O más trabajadores",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "ei7U211FC0-2csLRC-NzEA",
+  "Reference": "0eNy8hhjmECicTedOMKrJw/ei7U211FC0-2csLRC-NzEA",
+  "ParentRef": "0eNy8hhjmECicTedOMKrJw/PUen4cWAx02xgV-SSokPXw",
+  "Created": "2024-11-08T17:02:39.8394619Z",
+  "Updated": "2024-11-08T17:02:39.8394619Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
